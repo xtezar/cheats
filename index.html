@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark only">
+<meta name="theme-color" content="#07080f">
+<title>Tezar | For Sell Cheats</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: only dark;
+    --bg-deep: #07080f;
+    --bg-card: #0e101c;
+    --bg-card-hover: #13162a;
+    --bg-elevated: #161a2e;
+    --border: rgba(255,255,255,0.06);
+    --border-glow: rgba(99,102,241,0.35);
+    --text-primary: #f1f3f9;
+    --text-secondary: #9ca3b8;
+    --text-muted: #6b728a;
+    --accent: #6366f1;
+    --accent-light: #818cf8;
+    --accent-soft: rgba(99,102,241,0.12);
+    --accent-glow: rgba(99,102,241,0.45);
+    --success: #34d399;
+    --success-soft: rgba(52,211,153,0.12);
+    --warning: #fbbf24;
+    --danger: #f87171;
+    --gradient-1: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%);
+    --gradient-2: linear-gradient(135deg, #0e101c 0%, #161a2e 100%);
+    --shadow-card: 0 4px 24px rgba(0,0,0,0.4);
+    --shadow-glow: 0 0 40px rgba(99,102,241,0.15);
+    --radius: 16px;
+    --radius-sm: 10px;
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: only dark;
+    background: #07080f;
+  }
+
+  body {
+    font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    line-height: 1.7;
+    overflow-x: hidden;
+    min-height: 100vh;
+    color-scheme: only dark;
+    forced-color-adjust: none;
+  }
+
+  input, textarea, select, button, a {
+    color-scheme: only dark;
+    forced-color-adjust: none;
+  }
+
+  
+  #page-loader {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 99999;
+    background: #07080f;
+    direction: ltr;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    overflow: hidden;
+  }
+
+  #page-loader.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  #page-loader .loader-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+
+  #page-loader .loader-glow {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.18;
+    background: #6366f1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .loader-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .loader-ring {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid rgba(99,102,241,0.15);
+    border-top-color: #818cf8;
+    border-right-color: #8b5cf6;
+    animation: spin 0.9s linear infinite;
+    box-shadow: 0 0 28px rgba(99,102,241,0.3);
+  }
+
+  .loader-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #9ca3b8;
+    letter-spacing: 1.5px;
+    direction: ltr;
+    text-align: center;
+  }
+
+  .loader-dots {
+    direction: ltr;
+    text-align: center;
+  }
+
+  .loader-dots span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+    border-radius: 50%;
+    background: #818cf8;
+    animation: bounce 1.2s ease-in-out infinite;
+  }
+
+  .loader-dots span:nth-child(2) { animation-delay: 0.15s; }
+  .loader-dots span:nth-child(3) { animation-delay: 0.3s; }
+
+  .loader-credit {
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #6b728a;
+    letter-spacing: 0.8px;
+    direction: ltr;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes bounce {
+    0%, 80%, 100% { transform: translateY(0); opacity: 0.35; }
+    40% { transform: translateY(-7px); opacity: 1; }
+  }
+
+  body.loading {
+    overflow: hidden;
+  }
+
+  body.loading #main-content {
+    filter: blur(10px);
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  #main-content {
+    transition: filter 0.5s ease, opacity 0.5s ease;
+  }
+
+  
+  .bg-grid {
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .bg-glow {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .bg-glow-1 {
+    top: -200px;
+    right: -100px;
+    background: #6366f1;
+  }
+
+  .bg-glow-2 {
+    bottom: -200px;
+    left: -100px;
+    background: #8b5cf6;
+  }
+
+  .bg-glow-3 {
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4f46e5;
+    opacity: 0.08;
+  }
+
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(7,8,15,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text-primary);
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px var(--accent-glow);
+  }
+
+  .logo-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .logo-text {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+
+  .logo-text span {
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: var(--transition);
+  }
+
+  .nav-link:hover {
+    color: var(--text-primary);
+    background: var(--accent-soft);
+  }
+
+  .btn-telegram {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gradient-1);
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: var(--transition);
+    box-shadow: 0 4px 16px var(--accent-glow);
+  }
+
+  .btn-telegram:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px var(--accent-glow);
+  }
+
+  .btn-telegram svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  
+  .hero {
+    padding: 80px 0 40px;
+    text-align: center;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-soft);
+    border: 1px solid rgba(99,102,241,0.25);
+    color: var(--accent-light);
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+  }
+
+  .hero-badge svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+  }
+
+  .hero h1 span {
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  
+  .section {
+    padding: 40px 0 80px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .section-title svg {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: var(--accent-light);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .section-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+  }
+
+  
+  .product-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background: var(--gradient-1);
+    opacity: 0;
+    transition: var(--transition);
+  }
+
+  .product-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-glow);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card), var(--shadow-glow);
+  }
+
+  .product-card:hover::before {
+    opacity: 1;
+  }
+
+  .product-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    gap: 12px;
+  }
+
+  .product-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: var(--accent-soft);
+    border: 1px solid rgba(99,102,241,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .product-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: var(--accent-light);
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .product-price {
+    background: var(--success-soft);
+    color: var(--success);
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 8px;
+    white-space: nowrap;
+    border: 1px solid rgba(52,211,153,0.2);
+  }
+
+  .product-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--text-primary);
+  }
+
+  .product-en {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+  }
+
+  .product-desc {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    flex-grow: 1;
+    margin-bottom: 16px;
+  }
+
+  .product-footer {
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+  }
+
+  .buy-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    background: var(--accent-soft);
+    border: 1px solid rgba(99,102,241,0.25);
+    color: var(--accent-light);
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 12px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: var(--transition);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .buy-link:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+    box-shadow: 0 4px 20px var(--accent-glow);
+  }
+
+  .buy-link svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  
+  .product-card.featured {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, rgba(99,102,241,0.08) 0%, rgba(139,92,246,0.05) 100%);
+    border-color: rgba(99,102,241,0.25);
+  }
+
+  .product-card.featured::before {
+    opacity: 1;
+  }
+
+  .product-card.featured .product-header {
+    align-items: center;
+  }
+
+  .featured-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--gradient-1);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .featured-badge svg {
+    width: 12px;
+    height: 12px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  
+  .custom-section {
+    margin-top: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .custom-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(99,102,241,0.1) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .custom-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    background: var(--accent-soft);
+    border: 1px solid rgba(99,102,241,0.25);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-icon svg {
+    width: 32px;
+    height: 32px;
+    fill: none;
+    stroke: var(--accent-light);
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .custom-section h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .custom-section p {
+    color: var(--text-secondary);
+    max-width: 480px;
+    margin: 0 auto 28px;
+    font-size: 0.95rem;
+  }
+
+  
+  .features-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+
+  .feature-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: var(--transition);
+  }
+
+  .feature-item:hover {
+    border-color: var(--border-glow);
+    background: var(--bg-card-hover);
+  }
+
+  .feature-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: var(--accent-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .feature-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: var(--accent-light);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .feature-text h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .feature-text p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 48px 0 32px;
+    margin-top: 20px;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-logo .logo-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .footer-logo .logo-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-logo span {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .footer-info {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    max-width: 400px;
+  }
+
+  .footer-telegram {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-light);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 10px 20px;
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 10px;
+    transition: var(--transition);
+  }
+
+  .footer-telegram:hover {
+    background: var(--accent-soft);
+    border-color: var(--accent);
+  }
+
+  .footer-telegram svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .footer-copy {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    width: 100%;
+  }
+
+  
+  @media (max-width: 768px) {
+    .nav-links .nav-link {
+      display: none;
+    }
+
+    .hero {
+      padding: 50px 0 40px;
+    }
+
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .product-card.featured {
+      grid-column: 1;
+    }
+
+    .custom-section {
+      padding: 28px 20px;
+    }
+
+    .features-bar {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .product-card {
+    animation: fadeUp 0.5s ease backwards;
+  }
+
+  .product-card:nth-child(1) { animation-delay: 0.05s; }
+  .product-card:nth-child(2) { animation-delay: 0.1s; }
+  .product-card:nth-child(3) { animation-delay: 0.15s; }
+  .product-card:nth-child(4) { animation-delay: 0.2s; }
+  .product-card:nth-child(5) { animation-delay: 0.25s; }
+  .product-card:nth-child(6) { animation-delay: 0.3s; }
+  .product-card:nth-child(7) { animation-delay: 0.35s; }
+  .product-card:nth-child(8) { animation-delay: 0.4s; }
+  .product-card:nth-child(9) { animation-delay: 0.45s; }
+  .product-card:nth-child(10) { animation-delay: 0.5s; }
+</style>
+</head>
+<body class="loading">
+
+<div id="page-loader">
+  <div class="loader-grid"></div>
+  <div class="loader-glow"></div>
+  <div class="loader-center">
+    <div class="loader-ring"></div>
+    <div class="loader-text">Loading</div>
+    <div class="loader-dots">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="loader-credit">Made by Tezar</div>
+</div>
+
+<div id="main-content">
+<div class="bg-grid"></div>
+<div class="bg-glow bg-glow-1"></div>
+<div class="bg-glow bg-glow-2"></div>
+<div class="bg-glow bg-glow-3"></div>
+
+<header>
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="logo-text">SA-MP Cheat Shop</div>
+    </a>
+    <nav class="nav-links">
+      <a href="#products" class="nav-link">محصولات</a>
+      <a href="#custom" class="nav-link">سفارشی</a>
+      <a href="#about" class="nav-link">درباره</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      تمامی چیت‌ها دست‌ساز و پرایوت
+    </div>
+    <h1>فروش اسکریپت و چیت<br><span>SA-MP</span></h1>
+  </div>
+</section>
+
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
+        اسکریپت ها
+      </h2>
+      <span class="section-subtitle">تمامی چیت‌ها دست‌ساز و پرایوت</span>
+    </div>
+
+    <div class="products-grid">
+
+      
+      <div class="product-card featured">
+        <div class="featured-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          ویژه
+        </div>
+        <div class="product-header">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div>
+              <h3 class="product-name">اسپکت فایندر</h3>
+              <div class="product-en">Spect Finder</div>
+            </div>
+          </div>
+          <div class="product-price">۳۰۰ تومن</div>
+        </div>
+        <p class="product-desc">
+          هر ادمین یا هلپری بیاد اسپکتتون بهتون خبر میده // میتونید تنظیم کنید که مثلا پیام هشدار تو چت بیاد یا اسم طرفی که اسپکته رو بقل صفحه بزنه یا اگه دولتید باید شات اینا بگیرید میتونید بزارید یا آژیر بزنه بعد اینکه کسی اومد اسپکت یا اینکه به صورت یک علامت کوچیک بقل صفحه بفهمید که طرف اسپکته و... کلی قابلیت دیگه که همش قابل تنظیمه<br><br>لیست ادمینا و هلپرای انلاین هم میتونید فعال کنید که کنار صفحه به صورت دقیق و لحظه ای بهتون نشون بده
+        </p>
+        <div class="product-footer">
+          <a href="https://t.me/Pikasco" target="_blank" class="buy-link">
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            برای خرید به ایدی t.me/Pikasco در تلگرام پیام بدید
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="product-card featured">
+        <div class="featured-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          ویژه
+        </div>
+        <div class="product-header">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <h3 class="product-name">اتو پای دای</h3>
+              <div class="product-en">Auto-PayDay</div>
+            </div>
+          </div>
+          <div class="product-price">۲۰۰ تومن</div>
+        </div>
+        <p class="product-desc">
+          بعد اینکه سر هر ساعت اون کوییز املا یا ریاضی اومد میتونید تنظیم کنید که خودکار بدون دخالت خودتون خودش بهشون جواب بده و اینم قابل تنظیمه که مثلا بعد چند ثانیه جواب بده یا اینکه بزارید روی خودکار که نسبت به سختی (ضرب-تقسیم) یا طولانی بودن متن املا خودش خودکار تصمیم میگیره که بعد چند ثانیه جواب بده
+        </p>
+        <div class="product-footer">
+          <a href="https://t.me/Pikasco" target="_blank" class="buy-link">
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            برای خرید به ایدی t.me/Pikasco در تلگرام پیام بدید
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="product-price">۱۰۰ تومن</div>
+        </div>
+        <h3 class="product-name">آنتی اجکت</h3>
+        <div class="product-en">Anti-Eject</div>
+        <p class="product-desc">
+          هیچجوره توسط فدرال // پیدیا و... از ماشین اجکت نمیشید و اینم انو و اف داره و قابل تنظیمه
+        </p>
+        <div class="product-footer">
+          <a href="https://t.me/Pikasco" target="_blank" class="buy-link">
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            برای خرید به ایدی t.me/Pikasco در تلگرام پیام بدید
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div class="product-price">۱۰۰ تومن</div>
+        </div>
+        <h3 class="product-name">اتو اجکت</h3>
+        <div class="product-en">Auto-Aeject</div>
+        <p class="product-desc">
+          این مخصوص دولتیاس اگه داخل فکشنای دولتید میخواید برید مجرم گیری فقط ایدی طفو داخل سی ام دی وارد میکنید و وقتی نزدیکش بشید و سوار ماشین باشه خودکار با سرعت نور از ماشین /aeject میکنتش
+        </p>
+        <div class="product-footer">
+          <a href="https://t.me/Pikasco" target="_blank" class="buy-link">
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            برای خرید به ایدی t.me/Pikasco در تلگرام پیام بدید
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div class="product-price">۱۰۰ تومن</div>
+        </div>
+        <h3 class="product-name">تعمیر ماشین</h3>
+        <div class="product-en">Repair-Car</div>
+        <p class="product-desc">
+          بدون نیاز به کیت تعمیر ماشین میتونید ماشینتونو تعمیر کنید
+        </p>
+        <div class="product-footer">
+          <a href="https://t.me/Pikasco" target="_blank" class="buy-link">
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            برای خرید به ایدی t.me/Pikasco در تلگرام پیام بدید
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="product-price">۱۰۰ تومن</div>
+        </div>
+        <h3 class="product-name">دیوایس چکر</h3>
+        <div class="product-en">Device-Checker</div>
+        <p class="product-desc">
+          میتونید ببینید طرفی که جلوتونه اگه تگ پیسی داره و میخواید ببینید سمپ آبیه یا واقعا پیسی ، داخل ۱ ثانیه بعد وارد کردن ایدی چک میکنتش و بهتون میگه نتیجه رو
+        </p>
+        <div class="product-footer">
+          <a href="https://t.me/Pikasco" target="_blank" class="buy-link">
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            برای خرید به ایدی t.me/Pikasco در تلگرام پیام بدید
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <div class="product-price">۱۵۰ تومن</div>
+        </div>
+        <h3 class="product-name">دیدن چت همه</h3>
+        <div class="product-en">Chat-All</div>
+        <p class="product-desc">
+          میتونید بعد فعال کردنش هرکی که داخل مینی مپتون باشه رو چتشونو ببینید مهم نیست چقدر دور باشه فقط باید داخل مینی مپتون باشه
+        </p>
+        <div class="product-footer">
+          <a href="https://t.me/Pikasco" target="_blank" class="buy-link">
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            برای خرید به ایدی t.me/Pikasco در تلگرام پیام بدید
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-5c1.62-2.2 5-3 5-3"/><path d="M12 15v5s3.03-.55 5-2c2.2-1.62 3-5 3-5"/></svg>
+          </div>
+          <div class="product-price">۱۵۰ تومن</div>
+        </div>
+        <h3 class="product-name">اتو دراگ</h3>
+        <div class="product-en">Auto-Drugs</div>
+        <p class="product-desc">
+          میتونید تنظیم کنید که اگه مثلا اچ پیتون رسید به ۴۰ با مقدار انتخوابی دراگ که از قبل مشخص کردید با سرعت نور دراگ میزنه و اپشن کات انیم هم داره که اگه خواستید فعال کنید دیگه انیم دراگ زدن هم نشون نمیده
+        </p>
+        <div class="product-footer">
+          <a href="https://t.me/Pikasco" target="_blank" class="buy-link">
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            برای خرید به ایدی t.me/Pikasco در تلگرام پیام بدید
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg>
+          </div>
+          <div class="product-price">۱۰۰ تومن</div>
+        </div>
+        <h3 class="product-name">سی ام دی بایندر</h3>
+        <div class="product-en">CMD-Binder</div>
+        <p class="product-desc">
+          میتونید چت مورد نظرتون یا اگه دولت هستید میتونید چت های /D رو روش تنظیم کنید که مثلا موقع باربری بجای یه چت خیلی طولانی تایپ کردن دستی میتونید از قبل ذخیرش کنید و با زدن سی ام دی چیت و جلوش اسم متن دلخواه که از قبل سیو کردید خودش متن کاملو میده و در چن ثانیه میتونید همزمان و بدون غلط املایی چندین چت /D طولانی پشت هم بدید
+        </p>
+        <div class="product-footer">
+          <a href="https://t.me/Pikasco" target="_blank" class="buy-link">
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            برای خرید به ایدی t.me/Pikasco در تلگرام پیام بدید
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24"><path d="M2 20h20"/><path d="M5 20V8l7-4 7 4v12"/><path d="M9 20v-6h6v6"/><path d="M9 12h6"/></svg>
+          </div>
+          <div class="product-price">۱۰۰ تومن</div>
+        </div>
+        <h3 class="product-name">دولت هلپر</h3>
+        <div class="product-en">Governmental-Helper</div>
+        <p class="product-desc">
+          اینم مخصوص افرادیه که تو دولتن و اگه کد رادیویی یا اصطلاح و حتی وانتد لیستیو فراموش کردید با زدن سی ام دی چیت و کد رادیویی یا اصطلاح مورد نظر جلوش بهتون میگه (میتونید سر تستا هم باهاش سوسکی تقلب کنید)
+        </p>
+        <div class="product-footer">
+          <a href="https://t.me/Pikasco" target="_blank" class="buy-link">
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            برای خرید به ایدی t.me/Pikasco در تلگرام پیام بدید
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div style="text-align:center;margin-top:32px;color:var(--text-muted);font-size:0.95rem;">
+      و چندین چیت دیگه...
+    </div>
+  </div>
+</section>
+
+<section class="section" id="custom" style="padding-top:0;">
+  <div class="container">
+    <div class="custom-section">
+      <div class="custom-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      </div>
+      <h3>ساخت چیت سفارشی</h3>
+      <p>
+        چیت یا اسکریپتی که میخواستی داخل لیست نبود؟ میتونید واسه ساخت چیت اختصاصی و پرایوت پیوی پیام بدید
+      </p>
+      <a href="https://t.me/Pikasco" target="_blank" class="btn-telegram">
+        <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+        ایدی تلگرام &gt;&gt; t.me/Pikasco
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer id="about">
+  <div class="container footer-inner">
+    <div class="footer-logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <span>Tezar</span>
+    </div>
+    <p class="footer-info">
+      تمامی چیت‌ها دست‌ساز و پرایوت هستن.
+    </p>
+    <a href="https://t.me/Pikasco" target="_blank" class="footer-telegram">
+      <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+      t.me/Pikasco
+    </a>
+  </div>
+</footer>
+</div>
+
+<script>
+(function () {
+  var loader = document.getElementById('page-loader');
+  var minTime = 4000;
+  var start = Date.now();
+
+  function hideLoader() {
+    var elapsed = Date.now() - start;
+    var wait = Math.max(0, minTime - elapsed);
+    setTimeout(function () {
+      document.body.classList.remove('loading');
+      loader.classList.add('hide');
+      setTimeout(function () {
+        if (loader && loader.parentNode) loader.parentNode.removeChild(loader);
+      }, 650);
+    }, wait);
+  }
+
+  if (document.readyState === 'complete') {
+    hideLoader();
+  } else {
+    window.addEventListener('load', hideLoader);
+  }
+})();
+</script>
+</body>
+</html>
